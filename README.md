@@ -1,2 +1,2 @@
 # Project_shopee
-dynamic web project created for shoppee 
+This project is an E-commerce project with the name of Shoppee.
