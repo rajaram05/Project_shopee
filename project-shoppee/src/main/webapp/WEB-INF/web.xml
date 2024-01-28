@@ -9,24 +9,30 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  
   <servlet>
-  <servlet-name>loginValidate</servlet-name>
-  <servlet-class>com.drp.servlet.LoginServlet</servlet-class>
+    <servlet-name>loginValidate</servlet-name>
+    <servlet-class>com.drp.servlet.LoginServlet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
-   <servlet-name>loginValidate</servlet-name>
-   <url-pattern>/Login</url-pattern>
+    <servlet-name>loginValidate</servlet-name>
+    <url-pattern>/Login</url-pattern>
   </servlet-mapping>
-  
-   <servlet>
-  <servlet-name>home</servlet-name>
-  <servlet-class>com.drp.servlet.HomePage</servlet-class>
+  <servlet>
+    <servlet-name>home</servlet-name>
+    <servlet-class>com.drp.servlet.HomePage</servlet-class>
   </servlet>
-  
   <servlet-mapping>
-   <servlet-name>home</servlet-name>
-   <url-pattern>/homepage</url-pattern>
+    <servlet-name>home</servlet-name>
+    <url-pattern>/homepage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.shoppee.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
 </web-app>
