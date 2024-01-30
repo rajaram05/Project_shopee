@@ -35,4 +35,14 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>createServelet</display-name>
+    <servlet-name>createServelet</servlet-name>
+    <servlet-class>com.shoppee.login.createServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createServelet</servlet-name>
+    <url-pattern>/createServelet</url-pattern>
+  </servlet-mapping>
 </web-app>
