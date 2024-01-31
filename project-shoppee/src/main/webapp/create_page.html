@@ -10,46 +10,56 @@
 	<div class="imgBx">
 	<img src="images/shoppee-logo.jpg" alt="logo" >
 	</div>
-	<div class="container">
+	<div class="container" style="margin-top:50px">
 	<div class="title"style="background-clip: text;background: linear-gradient(#71b7e6, #9b59b6); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">Create Your Account</div>
-		<form action="">
+		<form action="create" method="get">
 	  		<div class="user-details">
 				<div class="input-box">
 					<span class="content">Full Name</span>
-					<input type="text" placeholder="Enter your Full Name" required>
+					<input type="text" name="fullname" placeholder="Enter your Full Name" required="required">
 				</div>
 				<div class="input-box">
 					<span class="content">User Name</span>
-					<input type="text" placeholder="Enter your User Name" required>
+					<input type="text" name="username" placeholder="Enter your User Name" required="required">
 				</div>
 				<div class="input-box">
 					<span class="content">Mail ID</span>
-					<input type="text" placeholder="Enter your Mail ID" required>
+					<input type="text" name="mail" placeholder="Enter your Mail ID" required="required">
 				</div>
 				<div class="input-box">
 					<span class="content">Phone Number</span>
-					<input type="text" placeholder="Enter your Phone Number" required>
+					<input type="text" name="phone" placeholder="Enter your Phone Number" required="required">
 				</div>
 				<div class="input-box">
 					<span class="content">Password</span>
-					<input type="password" placeholder="Enter your Password" required>
+					<input type="password" name="password" placeholder="Enter your Password" required="required">
 				</div>
 				<div class="input-box">
 					<span class="content">Confirm Password</span>
-					<input type="password" placeholder="Confirm Password" required>
+					<input type="password" name="conpassword" placeholder="Confirm Password" required="required">
 				</div>
 			</div>
 			<div class="DOB">
 				<span>Date of Birth</span>
-				<input type="date" id="Birtday" value="Birtday">
+				<input type="date" name="birth" id="Birtday" value="Birtday" required="required">
 			</div>
 			<div class="gender">
-				<input type="radio" name="gender" value="male"> Male
-				<input type="radio" name="gender" value="female"> Female
-				<input type="radio" name="gender" value="unknown"> Unknown	
+				<input type="radio" name="gender" value="m" required="required"> Male
+				<input type="radio" name="gender" value="f" required="required"> Female
+				<input type="radio" name="gender" value="o" required="required"> others	
+			</div>
+			<div class="ques" style="margin:10px 0 0 19px">
+				<p >Choose a Recovery Question</p>
+				<select class="option" style="width:500px; height:25px;border-radius: 5px;" required="required">
+					<option disabled selected>Choose a Option</option>
+					<option value="nickname">What is your Nick name?</option>
+					<option value="nickname">Who is your Favorite Hero?</option>
+					<option value="nickname">What is Your Favorite Place?</option>
+				</select>
+				<input type="text" style="color:black;font-weight: 500; font-size: 15px;width:500px; margin-top: 10px; height:25px;border-radius: 5px;"name="recovery" required="required">
 			</div>
 			<div class="button">
-				<input type="submit" style="color:black;font-weight: 500; font-size: 15px" value="Sumbit">
+				<input type="submit" style="color:black;font-weight: 500; font-size: 15px" value="Sumbit" required="required">
 			</div>
 		</form>
 	</div>

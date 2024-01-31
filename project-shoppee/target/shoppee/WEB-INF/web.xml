@@ -2,31 +2,29 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>project-shoppee</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
+    <welcome-file>login.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  
   <servlet>
-  <servlet-name>loginValidate</servlet-name>
-  <servlet-class>com.drp.servlet.LoginServlet</servlet-class>
+    <servlet-name>loginpage</servlet-name>
+    <servlet-class>com.shoppee.login.LoginServlet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
-   <servlet-name>loginValidate</servlet-name>
-   <url-pattern>/Login</url-pattern>
+    <servlet-name>loginpage</servlet-name>
+    <url-pattern>/login</url-pattern>
   </servlet-mapping>
-  
-   <servlet>
-  <servlet-name>home</servlet-name>
-  <servlet-class>com.drp.servlet.HomePage</servlet-class>
+  <servlet>
+    <description></description>
+    <display-name>createServelet</display-name>
+    <servlet-name>createServelet</servlet-name>
+    <servlet-class>com.shoppee.login.createServelet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
-   <servlet-name>home</servlet-name>
-   <url-pattern>/homepage</url-pattern>
+    <servlet-name>createServelet</servlet-name>
+    <url-pattern>/createServelet</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -68,6 +68,9 @@ form .DOB{
 form .gender {
 	margin: 15px 15px 0px 18px;
 }
+form .ques {
+	margin: 15px 15px 0px 18px;
+}
 section {
 	position: relative;
 	width: 100%;
