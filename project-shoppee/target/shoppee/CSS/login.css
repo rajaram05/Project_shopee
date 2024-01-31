@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.container{
+	height:500px;
+	width:500px;
+	}
+.h1{
+	align:center;
+	font:Calbiri;
+	font-type:bold;
+}	
+.rounded{
+	height:100px;
+    width:100px;
+}
+.form-label{
+	font-weight: bold;
+}
