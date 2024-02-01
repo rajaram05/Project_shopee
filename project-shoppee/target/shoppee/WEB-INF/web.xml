@@ -11,7 +11,7 @@
   </welcome-file-list>
   <servlet>
     <servlet-name>loginpage</servlet-name>
-    <servlet-class>com.shoppee.login.LoginServlet</servlet-class>
+    <servlet-class>co.in.project_shoppee.loginServelet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>loginpage</servlet-name>
@@ -21,10 +21,10 @@
     <description></description>
     <display-name>create_page</display-name>
     <servlet-name>createServelet</servlet-name>
-    <servlet-class>com.shoppee.login.createServelet</servlet-class>
+    <servlet-class>co.in.project_shoppee.createServelet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>createServelet</servlet-name>
-    <url-pattern>/create_page.html</url-pattern>
+    <url-pattern>/create</url-pattern>
   </servlet-mapping>
 </web-app>

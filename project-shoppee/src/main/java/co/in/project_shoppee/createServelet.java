@@ -15,11 +15,16 @@ import javax.servlet.http.HttpServletResponse;
 public class createServelet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		try {
-			response.setContentType("text/html");
-			PrintWriter pw = null;
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecommerce", "root", "0000");
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		
+		response.setContentType("text/html");
+		PrintWriter pw = response.getWriter();
+		try {			
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Ecommerce", "root", "0000");
 			String fullname = request.getParameter("fullname");
 			String username = request.getParameter("username");
 			String mail = request.getParameter("mail");
@@ -29,7 +34,7 @@ public class createServelet extends HttpServlet {
 			String birth = request.getParameter("birth");
 			String gender = request.getParameter("gender");
 			String recovery = request.getParameter("recovery");
-			PreparedStatement ps = con.prepareStatement("insert into logintable (fullname, username, mail, phone, password, conpassword, birth, gender, recovery) values (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+			PreparedStatement ps = con.prepareStatement("insert into CustomerDetails (fullname, username, mail, phone, password, conpassword, birth, gender, recovery) values (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 			ps.setString(2, fullname);
 			ps.setString(3, username);
 			ps.setString(4, mail);
@@ -44,15 +49,9 @@ public class createServelet extends HttpServlet {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			pw.write("error in creation");
 		}
 	
-	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
 	}
 }
