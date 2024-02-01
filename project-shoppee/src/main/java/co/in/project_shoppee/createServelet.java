@@ -17,8 +17,9 @@ public class createServelet extends HttpServlet {
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
+			response.setContentType("text/html");
 			PrintWriter pw = null;
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/CustomerDetails", "root", "0000");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecommerce", "root", "0000");
 			String fullname = request.getParameter("fullname");
 			String username = request.getParameter("username");
 			String mail = request.getParameter("mail");

@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -48,17 +49,18 @@ public class loginServelet extends HttpServlet {
 //			    	response.addCookie(ck);
 //			    	RequestDispatcher rd= request.getRequestDispatcher("home.html");
 //			    	rd.include(request, response);
-			    out.write("your Login is successfully, Welcome " +uname);
+			    	response.sendRedirect("home.html");
+			   
 			    }
 			    else {
-			    	request.getRequestDispatcher("/home.html").forward(request, response);
-			    	
+			    	 out.write("invalid your username and password");
+			    	 response.sendRedirect("login.html");
 			    	
 			    }
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-				response.sendRedirect("home.html");
+				
 			}
 	}
 
