@@ -18,13 +18,12 @@
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
   <servlet>
-    <description></description>
     <display-name>create_page</display-name>
-    <servlet-name>createServelet</servlet-name>
+    <servlet-name>creates</servlet-name>
     <servlet-class>co.in.project_shoppee.createServelet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>createServelet</servlet-name>
+    <servlet-name>creates</servlet-name>
     <url-pattern>/create</url-pattern>
   </servlet-mapping>
 </web-app>
