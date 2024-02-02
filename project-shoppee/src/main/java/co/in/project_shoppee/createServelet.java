@@ -51,8 +51,7 @@ public class createServelet extends HttpServlet {
 
 
 		    int count = ps.executeUpdate();
-		    response.sendRedirect("login.html");
-		    if (count == 0) {
+		    if (count != 0) {
 		        response.sendRedirect("login.html");
 		    } else {
 		        pw.print("Try Again");

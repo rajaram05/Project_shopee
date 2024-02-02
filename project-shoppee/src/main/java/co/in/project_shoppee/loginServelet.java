@@ -6,9 +6,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+//import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import javax.servlet.RequestDispatcher;
+//import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -31,45 +32,46 @@ public class loginServelet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");
-		PrintWriter out= response.getWriter();
-	    String uname = request.getParameter("username");
-	    String pass= request.getParameter("password");
-	    			
-				try {
-					Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SYSTEM", "admin");
-			// Statement stmt=con.createStatement()
-				PreparedStatement ps= con.prepareStatement("Select USER_NAME from Users where USER_NAME=? and PASSWORD=?");
-			    ps.setNString(2,uname);
-			    ps.setNString(3, pass);
-			    ResultSet rs= ps.executeQuery();
-			    
-			    if(rs.next()) {
-//			    	Cookie ck= new Cookie(uname, pass);
-//			    	response.addCookie(ck);
-//			    	RequestDispatcher rd= request.getRequestDispatcher("home.html");
-//			    	rd.include(request, response);
-			    	response.sendRedirect("home.html");
-			   
-			    }
-			    else {
-			    	 out.write("invalid your username and password");
-			    	 response.sendRedirect("login.html");
-			    	
-			    }
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				
-			}
+
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
+		response.setContentType("text/html");
+		PrintWriter out= response.getWriter();
+	    String uname = request.getParameter("loginusername");
+	    String pass= request.getParameter("loginpassword");
+	    			
+	    try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Ecommerce", "root", "0000");) {
+		   
+		    PreparedStatement ps = con.prepareStatement("select username from CustomerDetails where UserName = ? and Password =?");
+
+		    ps.setString(1, uname);
+		    ps.setString(2, pass);
+
+		    ResultSet rs = ps.executeQuery();
+		    
+		    if (rs.next()){
+		        response.sendRedirect("home.html");
+		    } else {
+		        out.print("Username or password is incorrect");
+		        response.sendRedirect("login.html");
+		    }
+
+		} catch (SQLException e) {
+		    e.printStackTrace();
+		    out.write("Error in creation");
+		}
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//doGet(request, response);
 	}
 
 }
