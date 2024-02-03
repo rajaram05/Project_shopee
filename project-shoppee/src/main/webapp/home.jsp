@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Home</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -13,8 +13,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
-
-
+<%@ include file="header.jsp" %>
 <div class="container">
     <h3 class="h3">Trending Fashions </h3>
     <div class="row">
@@ -932,5 +931,16 @@
     </div>
 </div>
 <hr>
+<script type="text/javascript">
+function dropdownmenu() {
+    var x = document.getElementById(dropdown)
+    if(x.dropdown === "Nav"){
+        x.dropdown += " drop"
+    }
+    else{
+        x.className = "Nav";
+    }
+}
+</script>
 </body>
 </html>
