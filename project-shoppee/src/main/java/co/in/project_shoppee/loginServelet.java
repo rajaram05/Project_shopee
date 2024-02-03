@@ -56,7 +56,7 @@ public class loginServelet extends HttpServlet {
 		    ResultSet rs = ps.executeQuery();
 		    
 		    if (rs.next()){
-		    	  response.sendRedirect("home.html");
+		    	  response.sendRedirect("home.jsp");
 		    } else {
 		    	
 		       //JOptionPane.showMessageDialog(null, "Username or password is incorrect, please try again");
