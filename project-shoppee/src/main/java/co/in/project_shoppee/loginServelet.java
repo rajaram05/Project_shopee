@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import javax.script.*;
 //import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -14,6 +15,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.JOptionPane;
 
 /**
  * Servlet implementation class loginServelet
@@ -27,7 +29,7 @@ public class loginServelet extends HttpServlet {
     public loginServelet() {
         // TODO Auto-generated constructor stub
     }
-
+    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 	}
@@ -54,10 +56,12 @@ public class loginServelet extends HttpServlet {
 		    ResultSet rs = ps.executeQuery();
 		    
 		    if (rs.next()){
-		        response.sendRedirect("home.html");
+		    	  response.sendRedirect("home.html");
 		    } else {
-		        out.print("Username or password is incorrect");
+		    	
+		       //JOptionPane.showMessageDialog(null, "Username or password is incorrect, please try again");
 		        response.sendRedirect("login.html");
+		        
 		    }
 
 		} catch (SQLException e) {

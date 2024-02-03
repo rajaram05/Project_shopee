@@ -49,7 +49,7 @@ public class createServelet extends HttpServlet {
 		    ps.setString(8, gender);
 		    ps.setString(9, recovery);
 
-
+           if(password.equals(conpassword)) {
 		    int count = ps.executeUpdate();
 		    if (count != 0) {
 		        response.sendRedirect("login.html");
@@ -57,6 +57,11 @@ public class createServelet extends HttpServlet {
 		        pw.print("Try Again");
 		        response.sendRedirect("create_page.html");
 		    }
+		    }
+           else {
+        	   pw.print("<h1>Password and confirm password is mismatched</h1>");
+        	   response.sendRedirect("create_page.html");
+           }
 
 		} catch (SQLException e) {
 		    e.printStackTrace();
