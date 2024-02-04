@@ -15,7 +15,8 @@
 <body>
 <%@ include file="header.jsp" %>
 <div class="container">
-    <h3 class="h3">Trending Fashions </h3>
+<div style="margin-top:150px">
+    <h3 class="h3">Trending Fashions </h3></div>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">

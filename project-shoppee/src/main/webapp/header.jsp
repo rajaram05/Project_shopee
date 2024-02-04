@@ -172,10 +172,10 @@
             <ul class="navi">
                 <li><img src="images/shoppee-logo.jpg" class="imgs" style="width: 80px; height: 80px"></li>
                 <li><input type="search" class="searchbox"></li>
-                <li><p class="sideheader"><b>Become a seller</b></p></li>
+                <li><p class="sideheader"><a href="#" style="color: black; text-decoration: none;"><b>Become a seller</b></a></p></li>
                 <li><p class="signup"><a href="#"><b>&#x1F464; Sign in</b></a></p></li>
-                <li><p class="sideheader"><b>&#x1f6d2;Cart</b></p></li>
-                <li><div class="dropdownbar"><a href="#" style="color: black;">&#x2630;</a></div></li>
+                <li><p class="sideheader"><a href="#"style="color: black;text-decoration: none;"><b>&#x1f6d2;Cart</b></a></p></li>
+                <li><div class="dropdownbar"><a href="#" style="color: black;text-decoration: none;">&#x2630;</a></div></li>
             </ul>
         </nav>
     </div>

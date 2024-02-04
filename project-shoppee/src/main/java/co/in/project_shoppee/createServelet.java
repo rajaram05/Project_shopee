@@ -37,6 +37,7 @@ public class createServelet extends HttpServlet {
 		    String gender = request.getParameter("gender");
 		    String recovery = request.getParameter("recovery");
 		    
+		    if(password.equals(conpassword)) {
 		    PreparedStatement ps = con.prepareStatement("insert into CustomerDetails (FullName, UserName, MailId, Phone_Number, Password, ConfirmPassword, dob, gender, recovery) values (?,?,?,?,?,?,?,?,?)");
 
 		    ps.setString(1, fullname);
@@ -48,21 +49,21 @@ public class createServelet extends HttpServlet {
 		    ps.setString(7, birth);
 		    ps.setString(8, gender);
 		    ps.setString(9, recovery);
-
-           if(password.equals(conpassword)) {
-		    int count = ps.executeUpdate();
-		    if (count != 0) {
-		        response.sendRedirect("login.html");
-		    } else {
-		        pw.print("Try Again");
-		        response.sendRedirect("create_page.html");
+		    
+			    int count = ps.executeUpdate();
+		    	if (count != 0) {
+		    		response.sendRedirect("login.html");
+		    		}else {
+                        pw.print("<script>alert('Login Failed! Try Again...');");
+                        pw.print("window.location.href='create_page.html';");
+                        pw.print("</script>");
+                        }
 		    }
-		    }
-           else {
-        	   pw.print("<h1>Password and confirm password is mismatched</h1>");
-        	   response.sendRedirect("create_page.html");
-           }
-
+		    	else {
+		    			pw.print("<script>alert('Passwords do not match. Please try again...');");
+		    			pw.print("window.location.href='create_page.html';");
+                        pw.print("</script>");
+		    		}
 		} catch (SQLException e) {
 		    e.printStackTrace();
 		    pw.write("Error in creation");
