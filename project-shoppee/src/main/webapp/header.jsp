@@ -87,6 +87,11 @@
         .sideheader {
             margin: 35px 50px 0 50px;
             display: block;
+            padding: 0 0 0 300px ; 
+        }
+        .cart {
+            margin: 35px 20px 0 50px;
+            display: block;
         }
 
         .imgs {
@@ -108,19 +113,44 @@
         }
 
         .dropdownbar {
-            margin: 35px 50px 0 50px;
+            margin: 35px 20px 0 50px;
             text-decoration: none;
             color: black;
         }
 
-        .searchbox {
-            margin: 20px 20px 7.5px 10px;
-            padding-left: 350px;
-            padding-bottom: 20px;
-            border-radius: 5px;
-            display: block;
+       	.search-bar {
+            margin: 12px 20px 7.5px 10px;
+            width:200%;
+            max-width:700px;
+            display:flex;
+            border-radius: 60px;
+            padding:10px 20px;
+            background-filter: blur(4px) saturate(180%);
         }
-
+        .search-bar input{
+        	flex:1;
+        	border:0;
+        	border-radius:50px;
+        	outline: none;
+        	padding: 10px 10px;
+        	font-size: 20px;
+        	color: black;
+        }
+        ::placeholder{
+        	color: grey;
+        }
+        
+        .search-bar button img{
+        	width: 20px;
+        }
+        
+        .search-bar button{
+        	border: 0;
+        	border-radius: 50%;
+        	width: 60px;
+        	height: 60px;
+        	cursor: pointer;
+        }
         navi ul {
             background-color: #eee;
             overflow: hidden;
@@ -176,10 +206,12 @@
         <nav class="pos">
             <ul class="navi">
                 <li><img src="images/shoppee-logo.jpg" class="imgs" style="width: 80px; height: 80px"></li>
-                <li><input type="search" class="searchbox"></li>
+                <li><form class="search-bar"><input type="text" placeholder="Search..." name="search">
+                	<button type="submit"><img alt="search" src="images/searchicon.png"></button>
+                </form></li>
                 <li><p class="sideheader"><a href="#" style="color: black; text-decoration: none;"><b>Become a seller</b></a></p></li>
                 <li><p class="signup"><a href="#"><b>&#x1F464; Sign in</b></a></p></li>
-                <li><p class="sideheader"><a href="#"style="color: black;text-decoration: none;"><b>&#x1f6d2;Cart</b></a></p></li>
+                <li><p class="cart"><a href="#"style="color: black;text-decoration: none; padding:0px;"><b>&#x1f6d2;Cart</b></a></p></li>
                 <li><div class="dropdownbar"><a href="#" style="color: black;text-decoration: none;">&#x2630;</a></div></li>
             </ul>
         </nav>
