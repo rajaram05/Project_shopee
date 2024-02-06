@@ -38,6 +38,7 @@ footer.foots ul{
     	list-style: none;
     	text-align: left;
     	padding-left: 0;
+    	margin:0;
 	}
 
 	footer.foots ul li{
