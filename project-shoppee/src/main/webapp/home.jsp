@@ -50,7 +50,7 @@
                     <div class="price">Rs.1,600
                         <span>Rs.2,000</span>
                     </div>
-                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                    <a class="add-to-cart" href="cart.jsp">+ Add To Cart</a>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
                     <div class="price">Rs.5.00
                         <span>Rs.1,000</span>
                     </div>
-                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                    <a class="add-to-cart" href="cart.jsp">+ Add To Cart</a>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@
                     <div class="price">Rs.5.00
                         <span>Rs.1,000</span>
                     </div>
-                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                    <a class="add-to-cart" href="cart.jsp">+ Add To Cart</a>
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
                     <div class="price">Rs.5.00
                         <span>Rs.1,000</span>
                     </div>
-                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                    <a class="add-to-cart" href="cart.jsp">+ Add To Cart</a>
                 </div>
             </div>
         </div>
@@ -167,7 +167,7 @@
                         <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
                         <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
-                    <a class="add-to-cart" href="">Add to cart</a>
+                    <a class="add-to-cart" href="cart.jsp">Add to cart</a>
                 </div>
                 <div class="product-content">
                     <h3 class="title"><a href="#">Women's Designer Top</a></h3>
@@ -187,7 +187,7 @@
                       <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
                       <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                   </ul>
-                  <a class="add-to-cart" href="">Add to cart</a>
+                  <a class="add-to-cart" href="cart.jsp">Add to cart</a>
                 </div>
                 <div class="product-content">
                     <h3 class="title"><a href="#">Women's Yellow Top</a></h3>
@@ -207,7 +207,7 @@
                         <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
                         <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
-                    <a class="add-to-cart" href="">Add to cart</a>
+                    <a class="add-to-cart" href="cart.jsp">Add to cart</a>
                 </div>
                 <div class="product-content">
                     <h3 class="title"><a href="#">Women's Designer Top</a></h3>
@@ -227,7 +227,7 @@
                         <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
                         <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
-                    <a class="add-to-cart" href="">Add to cart</a>
+                    <a class="add-to-cart" href="cart.jsp">Add to cart</a>
                 </div>
                 <div class="product-content">
                     <h3 class="title"><a href="#">Women's Designer Top</a></h3>
@@ -384,7 +384,7 @@
                         Rs.1,440
                         <span>Rs.1,600</span>
                     </div>
-                    <a class="add-to-cart" href="">ADD TO CART</a>
+                    <a class="add-to-cart" href="cart.jsp">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -408,7 +408,7 @@
                         Rs.17.60
                         <span>Rs.2,000</span>
                     </div>
-                    <a class="add-to-cart" href="">ADD TO CART</a>
+                    <a class="add-to-cart" href="cart.jsp">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -433,7 +433,7 @@
                         Rs.1,440
                         <span>Rs.1,600</span>
                     </div>
-                    <a class="add-to-cart" href="">ADD TO CART</a>
+                    <a class="add-to-cart" href="cart.jsp">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -458,7 +458,7 @@
                         Rs.1,440
                         <span>Rs.1,600</span>
                     </div>
-                    <a class="add-to-cart" href="">ADD TO CART</a>
+                    <a class="add-to-cart" href="cart.jsp">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -861,7 +861,7 @@
                     </ul>
                     <h3 class="title"><a href="#">Women's Top</a></h3>
                     <div class="price"> Rs.1,000 - Rs.3,000</div>
-                    <a class="add-to-cart" href="">VIEW PRODUCTS</a>
+                    <a class="add-to-cart" href="cart.jsp">VIEW PRODUCTS</a>
                 </div>
             </div>
         </div> 
@@ -884,7 +884,7 @@
                     </ul>
                     <h3 class="title"><a href="#">Men's Shirt</a></h3>
                     <div class="price"> Rs.852 </div>
-                    <a class="add-to-cart" href="">READ MORE</a>
+                    <a class="add-to-cart" href="cart.jsp">READ MORE</a>
                 </div>
             </div>
         </div>
@@ -907,7 +907,7 @@
                     </ul>
                     <h3 class="title"><a href="#">Women's Top</a></h3>
                     <div class="price"> Rs.1,000 - Rs.3,000</div>
-                    <a class="add-to-cart" href="">VIEW PRODUCTS</a>
+                    <a class="add-to-cart" href="cart.jsp">VIEW PRODUCTS</a>
                 </div>
             </div>
         </div>
@@ -930,7 +930,7 @@
                     </ul>
                     <h3 class="title"><a href="#">Women's Top</a></h3>
                     <div class="price"> Rs.1,000 - Rs.3,000</div>
-                    <a class="add-to-cart" href="">VIEW PRODUCTS</a>
+                    <a class="add-to-cart" href="cart.jsp">VIEW PRODUCTS</a>
                 </div>
             </div>
         </div>
