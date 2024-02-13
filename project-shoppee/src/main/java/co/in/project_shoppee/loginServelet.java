@@ -61,7 +61,6 @@ public class loginServelet extends HttpServlet {
 			    out.write("Error in creation");
 			}
 			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	}
